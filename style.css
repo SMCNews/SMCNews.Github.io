@@ -128,7 +128,7 @@ footer {
     overflow-y: hidden;
 }
 
-.NewsArticle {
+.SmallArticle {
     width: 45%;
     height: 150pt;
     background-color: #424242;
@@ -144,6 +144,20 @@ footer {
 .NewsDate {
     font-size: 0.8em;
     color: #999;
+}
+
+.ArticlePage {
+    display: grid;
+    grid-template-rows: 100pt Auto;
+    grid-template-columns: 15% 70% 15%;
+    overflow: auto;
+    overflow-wrap: break-word;
+    overflow-y: hidden;
+}
+
+.NewsArticle {
+    grid-row: 2;
+    grid-column: 2;
 }
 
 
