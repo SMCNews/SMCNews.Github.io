@@ -53,6 +53,7 @@ body {
     padding: 0;
     background-color: #212121;
     color: white;
+    font-family: "Ubuntu", sans-serif;
 }
 
 h1 {
@@ -73,9 +74,21 @@ p {
     font-style: normal; 
 }
 
+a {
+    color: #ffffff; /* Colour of links */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
 .HomePageGrid {
     display: grid;
-    grid-template-rows: 100pt  2000px;
+    grid-template-rows: 100pt 50pt Auto;
     grid-template-columns: 15% 70% 15%;
     overflow: auto;
     overflow-wrap: break-word;
@@ -93,37 +106,59 @@ p {
 
 .ArticleList {
     grid-column: 2 / 3;
-    grid-row: 2;
+    grid-row: 3;
     color: white;
 }
 
+.Latestnews {
+    grid-column: 2 / 3;
+    grid-row: 2;
+}
+
 .ArticleListLayout {
-    display: grid;
-    grid-template-rows: 50pt  Auto;
-    grid-template-columns: 48% 48%;
-    grid-gap: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: space-between;
+    row-gap: 10pt;
+    
     overflow: auto;
     overflow-wrap: break-word;
     overflow-y: hidden;
 }
 
 .NewsArticle {
-    grid-row: 2;
+    width: 45%;
+    height: 150pt;
     background-color: #424242;
     margin-bottom: 20px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.NewsSummary {
+    color: #E0E0E0;
+}
+
+.NewsDate {
+    font-size: 0.8em;
+    color: #999;
+}
+
 
 @media only screen and (max-width: 600px) {
     .HomePageGrid {
-        grid-template-rows: 100pt  2000px;
+        grid-template-rows: 100pt 50pt 2000px;
         grid-template-columns: 2% 96% 2%;
     }
 
     .ArticleListLayout {
-        grid-template-rows: 50pt  Auto;
-        grid-template-columns: 100%;
+        row-gap: 8pt;
+    }
+
+    .NewsArticle {
+        width: 90%;
+        height: 150pt;
     }
 }
