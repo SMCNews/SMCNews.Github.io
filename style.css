@@ -1,0 +1,129 @@
+.ubuntu-light {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .ubuntu-light-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .ubuntu-regular {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .ubuntu-regular-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .ubuntu-medium {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .ubuntu-medium-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .ubuntu-bold {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .ubuntu-bold-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+
+body {
+    
+    margin: 0;
+    padding: 0;
+    background-color: #212121;
+    color: white;
+}
+
+h1 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: italic; 
+}
+
+h2 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal; 
+}
+
+p {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+}
+
+.HomePageGrid {
+    display: grid;
+    grid-template-rows: 100pt  2000px;
+    grid-template-columns: 15% 70% 15%;
+    overflow: auto;
+    overflow-wrap: break-word;
+    overflow-y: hidden;
+}
+
+.NavBar {
+    grid-column: 1 / 4;
+    grid-row: 1;
+    font-size: xx-large;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+}
+
+.ArticleList {
+    grid-column: 2 / 3;
+    grid-row: 2;
+    color: white;
+}
+
+.ArticleListLayout {
+    display: grid;
+    grid-template-rows: 50pt  Auto;
+    grid-template-columns: 48% 48%;
+    grid-gap: 2%;
+    overflow: auto;
+    overflow-wrap: break-word;
+    overflow-y: hidden;
+}
+
+.NewsArticle {
+    grid-row: 2;
+    background-color: #424242;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+@media only screen and (max-width: 600px) {
+    .HomePageGrid {
+        grid-template-rows: 100pt  2000px;
+        grid-template-columns: 2% 96% 2%;
+    }
+
+    .ArticleListLayout {
+        grid-template-rows: 50pt  Auto;
+        grid-template-columns: 100%;
+    }
+}
