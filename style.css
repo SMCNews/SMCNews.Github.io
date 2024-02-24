@@ -57,9 +57,9 @@ body {
 }
 
 h1 {
-    font-family: "Ubuntu", sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 700;
-    font-style: italic; 
+    font-style: normal;
 }
 
 h2 {
@@ -88,7 +88,7 @@ footer {
 
 .HomePageGrid {
     display: grid;
-    grid-template-rows: 100pt 50pt Auto;
+    grid-template-rows: 125pt 50pt Auto;
     grid-template-columns: 15% 70% 15%;
     overflow: auto;
     overflow-wrap: break-word;
@@ -104,6 +104,13 @@ footer {
     align-self: center;
 }
 
+.NameAndLogo {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
 .ArticleList {
     grid-column: 2 / 3;
     grid-row: 3;
@@ -113,6 +120,11 @@ footer {
 .Latestnews {
     grid-column: 2 / 3;
     grid-row: 2;
+}
+
+.ArticleImage {
+    width: 35%;
+    height: 35%;
 }
 
 .ArticleListLayout {
@@ -148,7 +160,7 @@ footer {
 
 .ArticlePage {
     display: grid;
-    grid-template-rows: 100pt Auto;
+    grid-template-rows: 125pt Auto;
     grid-template-columns: 15% 70% 15%;
     overflow: auto;
     overflow-wrap: break-word;
@@ -163,7 +175,7 @@ footer {
 
 @media only screen and (max-width: 600px) {
     .HomePageGrid {
-        grid-template-rows: 100pt 50pt 2000px;
+        grid-template-rows: 125pt 50pt 2000px;
         grid-template-columns: 2% 96% 2%;
     }
 
@@ -173,10 +185,15 @@ footer {
 
     .SmallArticle {
         width: 90%;
-        height: 150pt;
+        height: 160pt;
     }
 
     .ArticlePage {
-        grid-template-columns: 10% 80% 10%;
+        grid-template-columns: 8% 84% 8%;
+    }
+
+    .ArticleImage {
+        width: 100%;
+        height: 100%;
     }
 }
