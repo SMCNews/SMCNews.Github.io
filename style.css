@@ -175,4 +175,8 @@ footer {
         width: 90%;
         height: 150pt;
     }
+
+    .ArticlePage {
+        grid-template-columns: 10% 80% 10%;
+    }
 }
