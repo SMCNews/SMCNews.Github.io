@@ -149,9 +149,11 @@ footer {
     width: 45%;
     height: 150pt;
     background-color: #424242;
+    border-radius: 25pt;
     margin-bottom: 20px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
 }
 
 .NewsSummary {
@@ -195,7 +197,7 @@ footer {
 
 @media only screen and (max-width: 600px) {
     .HomePageGrid {
-        grid-template-rows: 125pt 50pt 2000px;
+        grid-template-rows: 125pt 50pt auto;
         grid-template-columns: 2% 96% 2%;
     }
 
@@ -209,7 +211,7 @@ footer {
     }
 
     .ArticlePage {
-        grid-template-columns: 8% 84% 8%;
+        grid-template-columns: 5% 90% 5%;
     }
 
     .ArticleImage {
@@ -231,6 +233,7 @@ footer {
 
     .SpecialArticlePage {
         display: grid;
+        grid-template-columns: 5% 90% 5%;
         grid-template-rows: 125pt 3500pt;
     }
 }
