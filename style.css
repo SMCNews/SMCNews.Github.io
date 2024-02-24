@@ -127,6 +127,11 @@ footer {
     height: 35%;
 }
 
+.SmallerImage {
+    height: 17.5%;
+    width: 17.5%;
+}
+
 .ArticleListLayout {
     display: flex;
     flex-wrap: wrap;
@@ -166,10 +171,25 @@ footer {
     overflow-wrap: break-word;
     overflow-y: hidden;
 }
+.SpecialArticlePage {
+    display: grid;
+    grid-template-rows: 125pt 2500pt;
+    grid-template-columns: 15% 70% 15%;
+    overflow: auto;
+    overflow-wrap: break-word;
+    overflow-y: hidden;
+}
 
 .NewsArticle {
     grid-row: 2;
     grid-column: 2;
+}
+
+.VideoGallery {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    height: 75%;
 }
 
 
@@ -195,5 +215,22 @@ footer {
     .ArticleImage {
         width: 100%;
         height: 100%;
+    }
+
+    .SmallerImage {
+        height: 100%;
+        width: 100%;
+    }
+
+    .VideoGallery {
+        display: grid;
+        grid-template-columns: 100%;
+        width: 100%;
+        height: 50%;
+    }
+
+    .SpecialArticlePage {
+        display: grid;
+        grid-template-rows: 125pt 3500pt;
     }
 }
