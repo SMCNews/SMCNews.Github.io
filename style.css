@@ -195,6 +195,13 @@ footer {
 }
 
 
+@media only screen and (max-width: 1150px) {
+    .SmallArticle {
+        width: 40%;
+    }
+}
+
+
 @media only screen and (max-width: 600px) {
     .HomePageGrid {
         grid-template-rows: 125pt 50pt auto;
