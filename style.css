@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');                                                             /* Anton Font */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');  /* Ubuntu Font */
+
 .ubuntu-light {
     font-family: "Ubuntu", sans-serif;
     font-weight: 300;
@@ -45,6 +48,12 @@
     font-weight: 700;
     font-style: italic;
   }
+
+  .anton-regular {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }  
   
 
 body {
@@ -57,9 +66,9 @@ body {
 }
 
 h1 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: "Anton";
     font-weight: 700;
-    font-style: normal;
+    font-style: bold;
 }
 
 h2 {
