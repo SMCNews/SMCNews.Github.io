@@ -132,13 +132,26 @@ footer {
 }
 
 .ArticleImage {
-    width: 35%;
-    height: 35%;
+    float: right;
+    width: 50%;
+    margin-left: 1%;
+    margin-bottom: 0.5%;
+    position: relative;
+    color: #949494;
+}
+.ArticleImage div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(100, 100, 100, 0.75);
+    color: white;
+    padding: 1.5%;
+    border-radius: 10pt;
 }
 
 .SmallerImage {
-    height: 17.5%;
-    width: 17.5%;
+    height: 45%;
+    width: 45%;
 }
 
 .ArticleListLayout {
@@ -171,7 +184,7 @@ footer {
 
 .NewsDate {
     font-size: 0.8em;
-    color: #999;
+    color: #949494;
 }
 
 .ArticlePage {
@@ -194,6 +207,12 @@ footer {
 .NewsArticle {
     grid-row: 2;
     grid-column: 2;
+    background-color: #363636;
+    padding: 2%;
+    border-radius: 20pt;
+}
+.NewsArticle img{
+    border-radius: 10pt;
 }
 
 .VideoGallery {
@@ -201,6 +220,11 @@ footer {
     grid-template-columns: 50% 50%;
     width: 100%;
     height: 75%;
+}
+
+.Percent100Image {
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -212,6 +236,10 @@ footer {
 
 
 @media only screen and (max-width: 600px) {
+    body {
+        background-color: #242424;
+    }
+
     .HomePageGrid {
         grid-template-rows: 125pt 50pt auto;
         grid-template-columns: 2% 96% 2%;
@@ -231,6 +259,10 @@ footer {
     }
 
     .ArticleImage {
+        float: none;
+        width: 100%;
+    }
+    .ArticleImage img {
         width: 100%;
         height: 100%;
     }
@@ -251,5 +283,15 @@ footer {
         display: grid;
         grid-template-columns: 5% 90% 5%;
         grid-template-rows: 125pt 3500pt;
+    }
+
+    .NewsArticle {
+        background-color: #242424;
+        padding: 0;
+    }
+
+    .Percent80Image {
+        width: 100%;
+        height: 100%;
     }
 }
