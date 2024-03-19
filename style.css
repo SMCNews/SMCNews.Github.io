@@ -119,6 +119,9 @@ footer {
     justify-content: center;
     align-items: center;
 }
+.NameAndLogo:hover {
+    transform: scale(1.05);
+}
 
 .ArticleList {
     grid-column: 2 / 3;
@@ -176,6 +179,14 @@ footer {
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-decoration: none;
+}
+.SmallArticle:hover {
+    position: relative;
+    top: -2pt;
+    background-color: #505050;
+}
+.SmallArticle:active {
+    background-color: #505050;
 }
 
 .NewsSummary {
@@ -239,6 +250,10 @@ footer {
     body {
         background-color: #242424;
     }
+  
+    .NameAndLogo:active {
+        transform: scale(1.1);
+    }
 
     .HomePageGrid {
         grid-template-rows: 125pt 50pt auto;
@@ -249,6 +264,7 @@ footer {
         row-gap: 8pt;
     }
 
+    
     .SmallArticle {
         width: 90%;
         height: 160pt;
